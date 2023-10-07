@@ -2,9 +2,38 @@
 }
 
 .inputAndButtonContainer {
+    display: flex;
+    gap: 12px;
+}
+
+.inputAndButtonContainer input {
+    display: flex;
+    width: 372px;
+    height: 36px;
+    justify-content: center;
+    align-items: center;
+    margin-left: 9px;
+}
+
+.inputAndButtonContainer button {
+    display: inline-flex;
+    height: 36px;
+    padding: 5px 24px;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    border-radius: 3px;
+    background: #0066CCFF;
+    color: white;
 }
 
 .error {
+    color: #C00;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    padding: 7px 9px;
 }
 
 .input {
@@ -29,7 +58,14 @@
 }
 
 .text {
+    color: rgba(0, 0, 0, 0.50);
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    padding: 9px;
 }
 
 .greeting {
+    margin-left: 9px;
 }
