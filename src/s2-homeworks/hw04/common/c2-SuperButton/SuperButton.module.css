@@ -1,25 +1,42 @@
 .button {
+    width: 132px;
+    height: 30px;
+    border-radius: 3px;
+    border: none;
+    color: white;
 }
 
 .disabled {
+    background-color: #004D99;
+    color: #002E5C;
+    opacity: 50%;
 }
 
 .secondary {
+    color: #0066CC;
+    background-color: white;
+    width: 176px;
+    border: 1px solid #0066CC;
 }
 
 .default {
+    background-color: #0066CC;
 }
 
 .red {
+    background-color: #CC1439;
 }
 
 .default:hover {
+    background-color: #0080FF;
 }
 
 .red:hover {
+    background-color: #FF1A47;;
 }
 
 .secondary:hover {
+    background-color: #E5F0FA;
 }
 
 
