@@ -5,19 +5,30 @@
 }
 
 .users {
+    margin-left: 70px;
 }
 
 .buttonsContainer {
+    margin: 30px 307px 20px;
+    display: flex;
+    gap: 20px;
 }
 
 .container {
 }
 
 .thead {
+    background-color: #E5E5E5;
 }
 
 .nameCol {
+    width: 303px;
+    height: 36px;
+    font-weight: 600;
 }
 
 .ageCol {
+    width: 303px;
+    height: 36px;
+    font-weight: 600;
 }
