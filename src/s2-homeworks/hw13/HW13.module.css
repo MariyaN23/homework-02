@@ -1,22 +1,42 @@
 .buttonsContainer {
+    display: flex;
+    gap: 20px
+}
+.buttonsContainer button {
+    width: 150px;
+    height: 30px;
 }
 
 .responseContainer {
+    height: 300px;
+    display: flex;
+    margin: 100px;
+    gap: 50px;
 }
 
 .imageContainer {
+
 }
 
 .image {
+    width: 500px;
+    height: 300px;
 }
 
 .textContainer{
+    display: flex;
+    flex-direction: column;
 }
 
 .code {
+    padding-bottom: 20px;
+    font-weight: bold;
+    font-size: 30px;
 }
 
 .text {
+
 }
 .info {
+
 }
