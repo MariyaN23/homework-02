@@ -3,5 +3,6 @@
 }
 
 .loading {
-
+    width: 150px;
+    text-align: right;
 }
