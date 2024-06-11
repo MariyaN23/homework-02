@@ -62,13 +62,13 @@ const HW15 = () => {
             })
     }
 
-    const onChangePagination = (newPage: number, newCount: number) => {
+    const onChangePagination =  (newPage: number, newCount: number) => {
         // делает студент
         setPage(newPage)
         setCount(newCount)
 
-        setSearchParams({"page": `${newPage}`, "count": `${newCount}`, "sort": `${sort}`})
-        sendQuery(searchParams)
+        setSearchParams({"page": `${newPage}`, "count": `${newCount}`})
+        //sendQuery(searchParams)
         //
     }
 
@@ -79,17 +79,17 @@ const HW15 = () => {
          setPage(1) // при сортировке сбрасывать на 1 страницу
 
         setSearchParams({"page": `${page}`, "count": `${count}`, "sort": `${newSort}`})
-        sendQuery(searchParams)
+        //sendQuery(searchParams)
 
         //
     }
 
     useEffect(() => {
         const params = Object.fromEntries(searchParams)
-        sendQuery({page: params.page, count: params.count})
+        sendQuery(params)
         setPage(+params.page || 1)
         setCount(+params.count || 4)
-    }, [searchParams])
+    },[searchParams])
 
     const mappedTechs = techs.map(t => (
         <div key={t.id} className={s.row}>
@@ -129,7 +129,7 @@ const HW15 = () => {
                     </div>
                 </div>
 
-                {mappedTechs}
+                {!idLoading && mappedTechs}
             </div>
         </div>
     )
